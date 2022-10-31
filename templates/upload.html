@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+
+        <title> 코딩 만재들 </title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="intro"> <!-- 로그인&회원가입, 목록 -->
+                <div class="intro1">
+                    <div class="name">
+                        <h1><a id=info href="/">IAC GEORGIA</a></h1>
+                    </div>
+                </div>
+            </div>
+
+          <div class="information_list">
+             <div id="grid">
+             <ol>
+                 <h3><li><a>번역</a></li></h3><br>
+                 <h3><li><a>위키백과</a></li></h3>
+             </ol>
+                 <div>
+              <!--<h2 style="text-align:center;"><a style="border:3px solid; padding:5px;"></a></h2>-->
+
+            <form action = "http://localhost:5000/fileUpload" method = "POST" enctype = "multipart/form-data">
+            <input type = "file" class = "file" />
+            <input type = "submit" class="submit" />
+        </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </body>
+</html>

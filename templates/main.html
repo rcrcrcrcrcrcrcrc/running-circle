@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="intro"> <!-- 로그인&회원가입, 목록 -->
+                <div class="intro1">
+                    <div class="name">
+                        <a href="/">L.L.P</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <div class="information_list">
+                    <h1>나라 선택</h1>
+                    <div class="explanation">
+                        select a country
+                    </div>
+
+                    <ul class="icons1">
+                        <li>
+                          
+                            <div class="contents_icons1" id="kor">
+                                <a href = "/upload/ko">
+                                  <img src = "{{url_for('static',filename='image/south-korea.png')}}" width="100%" onclick="click_lan('ko')">
+                          
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="contents_icons2">
+                                <a href = "/upload/en">
+                                    <img src = "{{url_for('static',filename='image/american.png')}}" width="100%">
+  
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="icons2">
+                        <li>
+                            <div class="contents_icons2">
+                                <a href = "/upload/ja">
+                                  <img src = "{{url_for('static',filename='image/japan.png')}}" width="100%">
+                                   
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contents_icons1">
+                                <a href = "/upload/zh-cn">
+                                  <img src = "{{url_for('static',filename='image/china.png')}}" width="100%">
+                                    
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+          
+                </div>
+                <div class="contact" id="link_contact">
+                    <a>Language Learning Platform</a>
+                </div>
+                <div class="contact">
+                    <a>코딩 만재들</a>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

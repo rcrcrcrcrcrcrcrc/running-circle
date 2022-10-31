@@ -1,0 +1,61 @@
+
+
+<!doctype html>
+<html lang="eng">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+        <title> 코딩 만재들 </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function wiki() {
+                document.getElementById("wiki").innerHTML = '{{value}}';
+            }
+            </script>
+        <div class="wrap">
+            <div class="intro"> <!-- 로그인&회원가입, 목록 -->
+                <div class="intro1">
+                    <div class="name">
+                        <h1><a id=info href="/">L.L.P</a></h1>
+                    </div>
+                </div>
+            </div>
+
+          <div class="information_list">
+             <div id="grid">
+             <ol>
+                 <h3><li><a>번역</a></li></h3><br>
+                 <h3><li onclick="wiki()"><a>위키백과</a></li></h3>
+             </ol>
+                 <div>
+              <!--<h2 style="text-align:center;"><a style="border:3px solid; padding:5px;"></a></h2>-->
+
+
+                <div class="container">
+                    <div class="image-upload" id="image-upload">
+            
+
+
+                        <div>
+                            {% if True %}
+                            <img src = "{{url_for('static',filename=imagename)}}">
+                            {%endif %}
+                            </div>
+                            <div class="value">
+                                <div id="name">{{name}}</div>
+                                <div id="wiki"></div>
+                            </div>
+
+                    </div>
+                </div>
+              </div>
+          </div>
+            </div>
+            <div class="contact" id="link_contact">
+                <a>Language Learning Platform</a>
+            </div>
+        </div>
+    </body>
+</html>

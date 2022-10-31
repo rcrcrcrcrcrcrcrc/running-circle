@@ -1,0 +1,188 @@
+div {
+    margin:0;
+}
+body {
+    margin:0;
+}
+h1 {
+    font-size:45px;
+    text-align:center;
+    margin:0;
+    padding:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /*color: white;*/
+}
+
+a {
+    color:black; /*번역, 위키백과 글자 색*/
+    text-decoration:none;
+}
+
+li {
+    list-style-type:none;
+    font-size:25px;
+}
+
+h3 { /*네모 모양*/
+    text-align:center;
+    border:3px solid gray;
+    margin:0;
+    padding:10px;
+}
+ol { /*세로 줄*/
+    border-right:3px solid black;
+    height:1050px;
+    width:200px;
+    margin:0;
+    padding:20px;
+    text-align:center;
+}
+#grid {
+    display:grid;
+    grid-template-columns:150px 9fr;
+}
+/*.img까지 사진 나타내는 코드*/
+.button {
+    margin: 30px;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+
+form {
+     cursor: pointer;
+     font-size: 1em;
+     font-family: 'Noto Sans KR', sans-serif;
+     position:relative;
+ }
+ #chooseFile {
+    visibility: hidden;
+}
+.fileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fileInput {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px black;
+    width: 60%;
+    height: 30px;
+    font-size: 1.5em;
+}
+#fileName {
+    margin-left: 5px;
+}
+
+input[type=submit] {
+    margin-left: 300px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
+information_list {
+    width:1905px;
+    height: 1050px;
+    background: #f1f2f3;
+    text-align:center;
+}
+
+information_list > h1 {
+    font-size:60px;
+    letter-spacing: 6px;
+    padding-top: 30px;
+}
+
+/* style.css */
+
+/* label 스타일 조정 */
+
+
+ .intro{
+     width:100%; /*1905*/
+     height:230px;
+     background:black
+ }
+ .intro1{
+     width:100%;
+     height:50px
+ }
+ .name {
+     text-align:center;
+     padding-top:50px;
+ }
+ .name > a{
+     color:#fff;
+     font-size:120px;
+     margin-top:500px;
+ }
+ .information_list {
+     width:100%;/*1905px*/
+     height: 100%;/*1050px*/
+     background: #f1f2f3;
+     text-align:center;
+ }
+
+ .information_list > h1 {
+     font-size:60px;
+     letter-spacing: 6px;
+     padding-top: 30px;
+ }
+
+ .contact{
+     display:flex;
+     width:100%;/*1905px*/
+     height:200px;
+     background:black;
+ }
+ .con{
+     flex:8;
+     margin-left:20px;
+     margin-top:70px;
+     font-size:15px;
+     font-weight:lighter;
+     color:#fff;
+ }
+ .contact > a{
+     flex:4;
+     text-align:right;
+     font-size:30px;
+     margin:40px;
+     color:#fff;
+ }
+ #info{
+   color: white;
+   font-size: 70px;
+ }
+
+form{
+    margin-top: 100px;
+    display: flex;
+    padding-left:250px;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.value{
+    margin-left:100px;
+}
+.file{
+    color:black;
+    width:250px;
+    padding-left:300px;
+}
